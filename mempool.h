@@ -58,7 +58,7 @@ MemPool_t MemPoolCreate(size_t ItemSize, size_t ItemCount);
 /* MemPoolCreateStatic
  * Creates a new pool instance using provided static buffer and buffer.
  * @param ItemSize Block size, must be > 0
- * @param ItemCount Block count, must be > 0
+ * @param ItemCount Block count, 0 is used for auto-calculation to fit BufferSize
  * @param Buffer Pointer to static block buffer
  * @param BufferSize Static block buffer size
  * @param MemPoolBuffer Static pool buffer
