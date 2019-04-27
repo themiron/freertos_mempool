@@ -92,10 +92,10 @@ void MemPoolFree(MemPool_t pool, void *ptr);
  */
 void MemPoolFreePtr(void *ptr);
 
-/* MemPoolDelete
- * Deletes pool instance, and returns a handle by which the new pool
- * can be referenced.
- * @param pool
+/* MemPoolAvailable
+ * Allows to get a number of free blocks available in the pool.
+ * @param pool Pool handle, NULL value is ignored
+ * @return size_t free block count
  */
 size_t MemPoolAvailable(MemPool_t pool);
 
